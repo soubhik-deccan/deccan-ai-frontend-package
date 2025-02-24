@@ -1,0 +1,65 @@
+.p-rate-marker-group {
+  width: 100%;
+  @include flex-col(flex-start, flex-start);
+  gap: 14px;
+  border: solid 1px var(--neutrals-8, #e6e6e6);
+  border-radius: 6px;
+  padding: 16px 12px;
+
+  &.error-question {
+    border-color: var(--orange-400, red);
+    background: var(--orange-50, #fff5f5);
+  }
+
+  .p-rate-marker-group__radio_input {
+    width: 100%;
+  }
+
+  .p-rate-marker-group__error {
+    color: var(--orange-400, red);
+    font-size: 10px;
+
+    font-weight: 500;
+  }
+
+  .p-rate-marker-group__title {
+    color: #000;
+    font-weight: 600;
+
+    .info-icon {
+      margin-top: 8px;
+      margin-left: 8px;
+      cursor: pointer;
+      color: var(--neutrals-3, #999999);
+    }
+  }
+
+  .p-rate-marker-group__description {
+    color: var(--neutrals-1, #3b3b3b);
+    margin-top: -10px;
+    font-weight: 400;
+  }
+
+  .p-rate-marker-group__checkboxes {
+    width: 100%;
+    @include flex-col(flex-start, flex-start);
+    gap: 8px;
+
+    .p-rate-marker-group__checkbox {
+      cursor: pointer;
+      width: 100%;
+      @include flex-row(flex-start, center);
+      gap: 0px;
+      color: var(--neutrals-1, #3b3b3b);
+      font-weight: 400;
+
+      .MuiFormControlLabel-root {
+        color: #808080;
+
+        .MuiTypography-root {
+          font-size: 12px !important;
+        }
+      }
+    }
+  }
+}

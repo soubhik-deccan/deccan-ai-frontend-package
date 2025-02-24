@@ -1,0 +1,246 @@
+# Changelog
+
+All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
+
+### [0.0.120](https://bitbucket.org/deccan-ai/frontend-package/compare/v0.0.119...v0.0.120) (2025-02-18)
+
+
+### Features
+
+* Add LaTeX rendering support to display response component ([cf797b6](https://bitbucket.org/deccan-ai/frontend-package/commit/cf797b6874a539c6565736d37bada6022a63270d))
+
+### [0.0.119](https://bitbucket.org/deccan-ai/frontend-package/compare/v0.0.118...v0.0.119) (2025-02-12)
+
+### [0.0.118](https://bitbucket.org/deccan-ai/frontend-package/compare/v0.0.117...v0.0.118) (2025-02-12)
+
+### [0.0.117](https://bitbucket.org/deccan-ai/frontend-package/compare/v0.0.116...v0.0.117) (2025-02-12)
+
+### [0.0.116](https://bitbucket.org/deccan-ai/frontend-package/compare/v0.0.115...v0.0.116) (2025-02-12)
+
+### [0.0.115](https://bitbucket.org/deccan-ai/frontend-package/compare/v0.0.114...v0.0.115) (2025-02-12)
+
+### [0.0.114](https://bitbucket.org/deccan-ai/frontend-package/compare/v0.0.113...v0.0.114) (2025-02-12)
+
+### [0.0.113](https://bitbucket.org/deccan-ai/frontend-package/compare/v0.0.112...v0.0.113) (2025-02-12)
+
+### [0.0.112](https://bitbucket.org/deccan-ai/frontend-package/compare/v0.0.111...v0.0.112) (2025-02-12)
+
+### [0.0.111](https://bitbucket.org/deccan-ai/frontend-package/compare/v0.0.110...v0.0.111) (2025-02-12)
+
+### [0.0.110](https://bitbucket.org/deccan-ai/frontend-package/compare/v0.0.109...v0.0.110) (2025-02-12)
+
+### [0.0.109](https://bitbucket.org/deccan-ai/frontend-package/compare/v0.0.108...v0.0.109) (2025-02-12)
+
+### [0.0.108](https://bitbucket.org/deccan-ai/frontend-package/compare/v0.0.107...v0.0.108) (2025-02-12)
+
+### [0.0.107](https://bitbucket.org/deccan-ai/frontend-package/compare/v0.0.106...v0.0.107) (2025-02-12)
+
+### [0.0.106](https://bitbucket.org/deccan-ai/frontend-package/compare/v0.0.105...v0.0.106) (2025-02-12)
+
+### [0.0.105](https://bitbucket.org/deccan-ai/frontend-package/compare/v0.0.104...v0.0.105) (2025-02-12)
+
+### [0.0.104](https://bitbucket.org/deccan-ai/frontend-package/compare/v0.0.103...v0.0.104) (2025-02-11)
+
+
+### Features
+
+* Upgrade markdown rendering with advanced math and syntax support ([6c57ac9](https://bitbucket.org/deccan-ai/frontend-package/commit/6c57ac92be2d018cef7c564dc669c52eaf2c15a8))
+
+
+### Bug Fixes
+
+* Add Katex CSS import for proper math rendering ([c34ad93](https://bitbucket.org/deccan-ai/frontend-package/commit/c34ad93fd53e12f4dd0c1d34c1c32b39cc6cd5b1))
+
+### [0.0.103](https://bitbucket.org/deccan-ai/frontend-package/compare/v0.0.102...v0.0.103) (2025-02-11)
+
+### [0.0.102](https://bitbucket.org/deccan-ai/frontend-package/compare/v0.0.101...v0.0.102) (2025-02-11)
+
+### [0.0.101](https://bitbucket.org/deccan-ai/frontend-package/compare/v0.0.100...v0.0.101) (2025-02-11)
+
+### [0.0.100](https://bitbucket.org/deccan-ai/frontend-package/compare/v0.0.99...v0.0.100) (2025-02-11)
+
+### [0.0.99](https://bitbucket.org/deccan-ai/frontend-package/compare/v0.0.98...v0.0.99) (2025-02-11)
+
+### [0.0.98](https://bitbucket.org/deccan-ai/frontend-package/compare/v0.0.97...v0.0.98) (2025-02-11)
+
+
+### Features
+
+* Enhance PMarkDownEditor with MathJax support and improved rendering ([c2aa620](https://bitbucket.org/deccan-ai/frontend-package/commit/c2aa6205e5e8ac5d08a5e12b14ff3ee44abb339f))
+
+### [0.0.97](https://bitbucket.org/deccan-ai/frontend-package/compare/v0.0.96...v0.0.97) (2025-02-11)
+
+### [0.0.96](https://bitbucket.org/deccan-ai/frontend-package/compare/v0.0.95...v0.0.96) (2025-02-11)
+
+### [0.0.95](https://bitbucket.org/deccan-ai/frontend-package/compare/v0.0.94...v0.0.95) (2025-02-11)
+
+### 0.0.94 (2025-02-06)
+
+
+### Features
+
+* Add PTransliteration component and update dependencies ([a59f38d](https://bitbucket.org/deccan-ai/frontend-package/commit/a59f38dedd02cd20c3a6ef78fcb48a4438cf84a6))
+
+### [0.0.93](https://github.com/soulful-tech/fe-package/compare/v0.0.86...v0.0.93) (2025-02-06)
+
+### [0.0.86](https://github.com/soulful-tech/fe-package/compare/v0.0.85...v0.0.86) (2024-12-27)
+
+### [0.0.85](https://github.com/soulful-tech/fe-package/compare/v0.0.84...v0.0.85) (2024-12-27)
+
+### [0.0.84](https://github.com/soulful-tech/fe-package/compare/v0.0.83...v0.0.84) (2024-12-27)
+
+### [0.0.83](https://github.com/soulful-tech/fe-package/compare/v0.0.82...v0.0.83) (2024-12-27)
+
+### [0.0.82](https://github.com/soulful-tech/fe-package/compare/v0.0.81...v0.0.82) (2024-12-27)
+
+### [0.0.81](https://github.com/soulful-tech/fe-package/compare/v0.0.80...v0.0.81) (2024-12-26)
+
+### [0.0.80](https://github.com/soulful-tech/fe-package/compare/v0.0.79...v0.0.80) (2024-12-26)
+
+### [0.0.79](https://github.com/soulful-tech/fe-package/compare/v0.0.78...v0.0.79) (2024-12-20)
+
+### [0.0.78](https://github.com/soulful-tech/fe-package/compare/v0.0.77...v0.0.78) (2024-12-18)
+
+### [0.0.77](https://github.com/soulful-tech/fe-package/compare/v0.0.76...v0.0.77) (2024-12-18)
+
+### [0.0.76](https://github.com/soulful-tech/fe-package/compare/v0.0.75...v0.0.76) (2024-12-18)
+
+### [0.0.75](https://github.com/soulful-tech/fe-package/compare/v0.0.74...v0.0.75) (2024-12-18)
+
+### [0.0.74](https://github.com/soulful-tech/fe-package/compare/v0.0.73...v0.0.74) (2024-12-17)
+
+### [0.0.73](https://github.com/soulful-tech/fe-package/compare/v0.0.72...v0.0.73) (2024-12-17)
+
+### [0.0.72](https://github.com/soulful-tech/fe-package/compare/v0.0.71...v0.0.72) (2024-12-17)
+
+### [0.0.71](https://github.com/soulful-tech/fe-package/compare/v0.0.70...v0.0.71) (2024-12-09)
+
+### [0.0.70](https://github.com/soulful-tech/fe-package/compare/v0.0.69...v0.0.70) (2024-12-08)
+
+### [0.0.69](https://github.com/soulful-tech/fe-package/compare/v0.0.68...v0.0.69) (2024-12-08)
+
+### [0.0.68](https://github.com/soulful-tech/fe-package/compare/v0.0.67...v0.0.68) (2024-12-08)
+
+### [0.0.67](https://github.com/soulful-tech/fe-package/compare/v0.0.66...v0.0.67) (2024-12-08)
+
+### [0.0.66](https://github.com/soulful-tech/fe-package/compare/v0.0.65...v0.0.66) (2024-12-05)
+
+### [0.0.65](https://github.com/soulful-tech/fe-package/compare/v0.0.64...v0.0.65) (2024-12-02)
+
+### [0.0.64](https://github.com/soulful-tech/fe-package/compare/v0.0.63...v0.0.64) (2024-12-01)
+
+### [0.0.63](https://github.com/soulful-tech/fe-package/compare/v0.0.62...v0.0.63) (2024-11-30)
+
+### [0.0.62](https://github.com/soulful-tech/fe-package/compare/v0.0.61...v0.0.62) (2024-11-30)
+
+### [0.0.61](https://github.com/soulful-tech/fe-package/compare/v0.0.60...v0.0.61) (2024-11-30)
+
+### [0.0.60](https://github.com/soulful-tech/fe-package/compare/v0.0.59...v0.0.60) (2024-11-30)
+
+### [0.0.59](https://github.com/soulful-tech/fe-package/compare/v0.0.58...v0.0.59) (2024-11-29)
+
+### [0.0.58](https://github.com/soulful-tech/fe-package/compare/v0.0.57...v0.0.58) (2024-11-29)
+
+### [0.0.57](https://github.com/soulful-tech/fe-package/compare/v0.0.56...v0.0.57) (2024-11-29)
+
+### [0.0.56](https://github.com/soulful-tech/fe-package/compare/v0.0.55...v0.0.56) (2024-11-29)
+
+### [0.0.55](https://github.com/soulful-tech/fe-package/compare/v0.0.54...v0.0.55) (2024-11-29)
+
+### [0.0.54](https://github.com/soulful-tech/fe-package/compare/v0.0.53...v0.0.54) (2024-11-29)
+
+### [0.0.53](https://github.com/soulful-tech/fe-package/compare/v0.0.52...v0.0.53) (2024-11-29)
+
+### [0.0.52](https://github.com/soulful-tech/fe-package/compare/v0.0.51...v0.0.52) (2024-11-29)
+
+### [0.0.51](https://github.com/soulful-tech/fe-package/compare/v0.0.50...v0.0.51) (2024-11-28)
+
+### [0.0.50](https://github.com/soulful-tech/fe-package/compare/v0.0.49...v0.0.50) (2024-11-26)
+
+### [0.0.49](https://github.com/soulful-tech/fe-package/compare/v0.0.48...v0.0.49) (2024-11-26)
+
+### [0.0.48](https://github.com/soulful-tech/fe-package/compare/v0.0.46...v0.0.48) (2024-11-26)
+
+### [0.0.47](https://github.com/soulful-tech/fe-package/compare/v0.0.46...v0.0.47) (2024-11-26)
+
+### [0.0.46](https://github.com/soulful-tech/fe-package/compare/v0.0.45...v0.0.46) (2024-11-26)
+
+### [0.0.45](https://github.com/soulful-tech/fe-package/compare/v0.0.44...v0.0.45) (2024-11-26)
+
+### [0.0.44](https://github.com/soulful-tech/fe-package/compare/v0.0.43...v0.0.44) (2024-11-26)
+
+### [0.0.43](https://github.com/soulful-tech/fe-package/compare/v0.0.42...v0.0.43) (2024-11-24)
+
+### [0.0.42](https://github.com/soulful-tech/fe-package/compare/v0.0.41...v0.0.42) (2024-11-24)
+
+### [0.0.41](https://github.com/soulful-tech/fe-package/compare/v0.0.40...v0.0.41) (2024-11-24)
+
+### [0.0.40](https://github.com/soulful-tech/fe-package/compare/v0.0.39...v0.0.40) (2024-11-23)
+
+### [0.0.39](https://github.com/soulful-tech/fe-package/compare/v0.0.38...v0.0.39) (2024-11-23)
+
+### [0.0.38](https://github.com/soulful-tech/fe-package/compare/v0.0.37...v0.0.38) (2024-11-23)
+
+### [0.0.37](https://github.com/soulful-tech/fe-package/compare/v0.0.36...v0.0.37) (2024-11-21)
+
+### [0.0.36](https://github.com/soulful-tech/fe-package/compare/v0.0.35...v0.0.36) (2024-11-19)
+
+### [0.0.35](https://github.com/soulful-tech/fe-package/compare/v0.0.34...v0.0.35) (2024-11-19)
+
+### [0.0.34](https://github.com/soulful-tech/fe-package/compare/v0.0.33...v0.0.34) (2024-11-19)
+
+### [0.0.33](https://github.com/soulful-tech/fe-package/compare/v0.0.32...v0.0.33) (2024-11-19)
+
+### [0.0.32](https://github.com/soulful-tech/fe-package/compare/v0.0.31...v0.0.32) (2024-11-18)
+
+### [0.0.31](https://github.com/soulful-tech/fe-package/compare/v0.0.30...v0.0.31) (2024-11-18)
+
+### [0.0.30](https://github.com/soulful-tech/fe-package/compare/v0.0.29...v0.0.30) (2024-11-17)
+
+### [0.0.29](https://github.com/soulful-tech/fe-package/compare/v0.0.28...v0.0.29) (2024-11-17)
+
+### [0.0.28](https://github.com/soulful-tech/fe-package/compare/v0.0.27...v0.0.28) (2024-11-17)
+
+### [0.0.27](https://github.com/soulful-tech/fe-package/compare/v0.0.26...v0.0.27) (2024-11-17)
+
+### [0.0.26](https://github.com/soulful-tech/fe-package/compare/v0.0.25...v0.0.26) (2024-11-17)
+
+### [0.0.25](https://github.com/soulful-tech/fe-package/compare/v0.0.24...v0.0.25) (2024-11-17)
+
+### [0.0.24](https://github.com/soulful-tech/fe-package/compare/v0.0.23...v0.0.24) (2024-11-17)
+
+### [0.0.23](https://github.com/soulful-tech/fe-package/compare/v0.0.22...v0.0.23) (2024-11-17)
+
+### [0.0.22](https://github.com/soulful-tech/fe-package/compare/v0.0.21...v0.0.22) (2024-11-17)
+
+### [0.0.21](https://github.com/soulful-tech/fe-package/compare/v0.0.20...v0.0.21) (2024-11-17)
+
+### [0.0.20](https://github.com/soulful-tech/fe-package/compare/v0.0.19...v0.0.20) (2024-11-17)
+
+### [0.0.19](https://github.com/soulful-tech/fe-package/compare/v0.0.18...v0.0.19) (2024-11-17)
+
+### [0.0.18](https://github.com/soulful-tech/fe-package/compare/v0.0.17...v0.0.18) (2024-11-17)
+
+### [0.0.17](https://github.com/soulful-tech/fe-package/compare/v0.0.16...v0.0.17) (2024-11-17)
+
+### [0.0.16](https://github.com/soulful-tech/fe-package/compare/v0.0.15...v0.0.16) (2024-11-17)
+
+### [0.0.15](https://github.com/soulful-tech/fe-package/compare/v0.0.14...v0.0.15) (2024-11-17)
+
+### [0.0.14](https://github.com/soulful-tech/fe-package/compare/v0.0.13...v0.0.14) (2024-11-16)
+
+### [0.0.13](https://github.com/soulful-tech/fe-package/compare/v0.0.12...v0.0.13) (2024-11-16)
+
+### [0.0.12](https://github.com/soulful-tech/fe-package/compare/v0.0.11...v0.0.12) (2024-11-16)
+
+### [0.0.11](https://github.com/soulful-tech/fe-package/compare/v0.0.9...v0.0.11) (2024-11-16)
+
+### [0.0.9](https://github.com/soulful-tech/fe-package/compare/v0.0.8...v0.0.9) (2024-11-16)
+
+### [0.0.8](https://github.com/soulful-tech/fe-package/compare/v0.0.6...v0.0.8) (2024-11-16)
+
+### [0.0.6](https://github.com/soulful-tech/fe-package/compare/v0.0.7...v0.0.6) (2024-11-16)
+
+### [0.0.5](https://github.com/soulful-tech/fe-package/compare/v0.0.7...v0.0.5) (2024-11-16)
+
+### [0.0.4](https://github.com/soulful-tech/fe-package/compare/v0.0.7...v0.0.4) (2024-11-16)

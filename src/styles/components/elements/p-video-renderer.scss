@@ -1,0 +1,372 @@
+// .p-video-renderer {
+//   position: relative;
+//   overflow: hidden;
+//   background-color: var(--neutrals-5, #cccccc);
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+
+//   .react-player {
+//     position: absolute;
+//     top: 0;
+//     left: 0;
+//   }
+
+//   .p-video-renderer__fallback {
+//     position: absolute;
+//     color: var(--neutrals-0, #000);
+//     z-index: 10;
+//     text-align: center;
+//     width: 100%;
+//     font-size: 1.5rem;
+//   }
+// }
+
+// Variables
+$theme-colors: (
+  "primary": var(--primary-color, #007bff),
+  "background": var(--neutrals-5, #cccccc),
+  "control-bg": rgba(0, 0, 0, 0.8),
+  "control-text": #ffffff,
+  "progress-bg": rgba(255, 255, 255, 0.2),
+  "progress-fill": var(--primary-color, #007bff),
+);
+
+// Transitions
+$transitions: (
+  "fast": 0.2s,
+  "normal": 0.3s,
+  "slow": 0.5s,
+);
+
+// Z-indices
+$z-layers: (
+  "base": 1,
+  "controls": 2,
+  "fullscreen": 9999,
+);
+
+// Mixins
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin position-fill {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+@mixin control-button {
+  background: none;
+  border: none;
+  padding: 0.5rem;
+  color: map-get($theme-colors, "control-text");
+  cursor: pointer;
+  opacity: 0.9;
+  transition: opacity map-get($transitions, "fast") ease;
+
+  &:hover {
+    opacity: 1;
+  }
+
+  &:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px map-get($theme-colors, "primary");
+  }
+
+  &:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+}
+
+// Main Component
+.p-video-renderer {
+  position: relative;
+  overflow: hidden;
+  background-color: map-get($theme-colors, "background");
+  width: 100%;
+  height: 100%;
+  border-radius: 4px;
+
+  // Fullscreen Mode
+  &.fullscreen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: map-get($z-layers, "fullscreen");
+    border-radius: 0;
+
+    .p-video-renderer__controls {
+      padding: 2rem;
+    }
+  }
+
+  // Video Element
+  &__video {
+    @include position-fill;
+    object-fit: contain;
+
+    &::-webkit-media-controls {
+      display: none !important;
+    }
+  }
+
+  // Controls Container
+  &__controls {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(
+      to top,
+      map-get($theme-colors, "control-bg"),
+      transparent
+    );
+    padding: 1rem;
+    opacity: 0;
+    transition: opacity map-get($transitions, "normal") ease;
+    z-index: map-get($z-layers, "controls");
+
+    &:hover {
+      opacity: 1;
+    }
+
+    // Progress Bar Container
+    &-progress {
+      width: 100%;
+      height: 4px;
+      background: map-get($theme-colors, "progress-bg");
+      cursor: pointer;
+      margin-bottom: 1rem;
+      position: relative;
+      border-radius: 2px;
+      transition: height map-get($transitions, "fast") ease;
+
+      &:hover {
+        height: 6px;
+      }
+
+      // Progress Bar
+      .progress-bar {
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        background: map-get($theme-colors, "progress-fill");
+        width: var(--progress, 0%);
+        transition: width 0.1s linear;
+        border-radius: inherit;
+
+        &::after {
+          content: "";
+          position: absolute;
+          right: -6px;
+          top: 50%;
+          transform: translateY(-50%);
+          width: 12px;
+          height: 12px;
+          background: map-get($theme-colors, "progress-fill");
+          border-radius: 50%;
+          opacity: 0;
+          transition: opacity map-get($transitions, "fast") ease;
+        }
+      }
+
+      &:hover .progress-bar::after {
+        opacity: 1;
+      }
+    }
+
+    // Main Controls
+    &-main {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+
+      // Control Buttons
+      .control-button {
+        @include control-button;
+
+        svg {
+          transition: transform map-get($transitions, "fast") ease;
+        }
+
+        &:hover svg {
+          transform: scale(1.1);
+        }
+      }
+
+      // Volume Control
+      .volume-slider {
+        width: 80px;
+        position: relative;
+
+        input[type="range"] {
+          width: 100%;
+          height: 4px;
+          -webkit-appearance: none;
+          background: map-get($theme-colors, "progress-bg");
+          border-radius: 2px;
+          cursor: pointer;
+          transition: height map-get($transitions, "fast") ease;
+
+          &::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: map-get($theme-colors, "control-text");
+            cursor: pointer;
+            transition: transform map-get($transitions, "fast") ease;
+          }
+
+          &:hover {
+            height: 6px;
+
+            &::-webkit-slider-thumb {
+              transform: scale(1.2);
+            }
+          }
+
+          &:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+          }
+        }
+      }
+
+      // Time Display
+      .time-display {
+        color: map-get($theme-colors, "control-text");
+        font-size: 0.875rem;
+        font-family: monospace;
+        min-width: 100px;
+        text-align: center;
+        user-select: none;
+      }
+
+      // Spacer
+      .spacer {
+        flex: 1;
+      }
+    }
+  }
+
+  // Loading State
+  &__loader {
+    @include position-fill;
+    @include flex-center;
+    background: rgba(0, 0, 0, 0.5);
+
+    svg {
+      color: map-get($theme-colors, "control-text");
+    }
+  }
+
+  // Error State
+  &__error {
+    @include position-fill;
+    @include flex-center;
+    flex-direction: column;
+    gap: 1rem;
+    background: rgba(0, 0, 0, 0.8);
+    color: map-get($theme-colors, "control-text");
+    padding: 2rem;
+    text-align: center;
+
+    svg {
+      color: #ff4444;
+      width: 48px;
+      height: 48px;
+    }
+  }
+}
+
+// Mobile Optimizations
+@media (max-width: 768px) {
+  .p-video-renderer {
+    &__controls {
+      padding: 0.5rem;
+
+      &-main {
+        gap: 0.5rem;
+
+        .volume-slider {
+          width: 60px;
+        }
+
+        .time-display {
+          min-width: 80px;
+          font-size: 0.75rem;
+        }
+
+        .control-button {
+          padding: 0.25rem;
+        }
+      }
+    }
+  }
+}
+
+// Touch Device Optimizations
+@media (hover: none) {
+  .p-video-renderer {
+    &__controls {
+      opacity: 1;
+      background: linear-gradient(
+        to top,
+        map-get($theme-colors, "control-bg"),
+        rgba(0, 0, 0, 0) 100%
+      );
+    }
+  }
+}
+
+// RTL Support
+[dir="rtl"] {
+  .p-video-renderer {
+    &__controls {
+      &-progress {
+        .progress-bar {
+          left: auto;
+          right: 0;
+
+          &::after {
+            right: auto;
+            left: -6px;
+          }
+        }
+      }
+    }
+  }
+}
+
+// Print Styles
+@media print {
+  .p-video-renderer {
+    &__controls {
+      display: none;
+    }
+  }
+}
+
+// High Contrast Mode
+@media (forced-colors: active) {
+  .p-video-renderer {
+    &__controls {
+      &-progress {
+        .progress-bar {
+          background: CanvasText;
+        }
+      }
+    }
+  }
+}

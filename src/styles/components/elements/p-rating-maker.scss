@@ -1,0 +1,50 @@
+.p-rate-marker {
+  display: flex;
+  max-width: 100%;
+  align-items: flex-start;
+  width: 100%;
+  margin: 0;
+  gap: 20px;
+
+  .p-rate-circle-wrapper {
+    min-width: 80px;
+    width: max-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+
+    .p-rate-circle {
+      width: 24px;
+      height: 24px;
+      border: 2px solid var(--neutrals-6, #d9d9d9);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      font-size: 12px;
+      font-weight: 700;
+      background-color: var(--neutral-3, #f0f0f0);
+      color: transparent;
+      box-shadow: rgba(50, 50, 93, 0.05) 0px 4px 10px inset,
+        rgba(0, 0, 0, 0.1) 0px 2px 4px inset;
+      transition: all 0.3s ease-in-out;
+
+      &.selected {
+        border: 2px solid var(--primary-3, #2b3ca1);
+        background-color: var(--primary-3, #2b3ca1);
+        color: transparent;
+        box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px,
+          rgba(0, 0, 0, 0.05) 0px 5px 10px;
+      }
+    }
+
+    .p-rate-label {
+      font-weight: 500;
+      text-align: center;
+      color: #111;
+    }
+  }
+}

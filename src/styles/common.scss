@@ -1,0 +1,14 @@
+.snackbar-btn-action {
+	color: #00bbff !important;
+}
+
+.snackbar-btn-dismiss {
+	color: #ff1744 !important;
+}
+
+.read-only {
+	user-select: none;
+	pointer-events: none;
+	cursor: not-allowed;
+	opacity: 0.9;
+}

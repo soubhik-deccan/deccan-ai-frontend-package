@@ -1,0 +1,111 @@
+.p-select-wrapper {
+  width: 100%;
+  &.error {
+    border-radius: 8px;
+    border: 1px solid var(--accent-red, #c22929) !important;
+    background-color: var(--accent-red-lite, #fbeeee) !important;
+    background: var(--accent-red-lite, #fbeeee) !important;
+    font-weight: 400;
+    font-style: normal;
+    color: var(--neutrals-2, #fbeeee) !important;
+  }
+
+  .react-select__control {
+    background: #fff;
+    border: 1px solid var(--neutrals-7, #e6e6e6);
+    color: var(--neutrals-0, #1b1b1b);
+    box-shadow: none;
+    padding: 2px 4px;
+    border-radius: 8px;
+    &:hover {
+      border: 1px solid var(--neutrals-6, #ccc);
+    }
+
+    &:focus-within {
+      outline: none;
+      border: 1px solid var(--primary-4, #2b3ca1);
+    }
+
+    .react-select__value-container {
+      font-size: 14px;
+      font-style: normal;
+      color: var(--neutrals-0, #1b1b1b);
+
+      &.react-select__value-container--is-multi {
+        .react-select__multi-value__label-custom {
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+          border-radius: 4px;
+          font-size: 14px;
+          font-weight: 500;
+          font-style: normal;
+          color: var(--neutrals-0, #1b1b1b);
+          padding: 3px 5px;
+          display: flex;
+          min-width: 0;
+          background-color: hsl(0, 0%, 90%);
+          margin: 2px;
+        }
+      }
+
+      .react-select__placeholder {
+        font-weight: 400;
+        font-size: 14px;
+        font-style: normal;
+        color: var(--neutrals-4, #999999);
+      }
+
+      .react-select__single-value {
+        font-size: 14px;
+        font-weight: 500;
+        font-style: normal;
+        color: var(--neutrals-0, #1b1b1b);
+      }
+
+      .react-select__multi-value {
+        .react-select__multi-value__label {
+          font-size: 14px;
+          font-weight: 500;
+          font-style: normal;
+          color: var(--neutrals-0, #1b1b1b);
+        }
+      }
+    }
+  }
+
+  .react-select__menu {
+    .react-select__option {
+      font-size: 14px;
+      font-style: normal;
+      color: var(--neutrals-2, #666666);
+      font-weight: 500;
+      cursor: pointer;
+      &:hover {
+        background: var(--primary-9, #eef0fa);
+      }
+      &.react-select__option--is-focused {
+        background: var(--primary-9, #eef0fa);
+        color: var(--neutrals-2, #666666);
+      }
+
+      &.react-select__option--is-selected {
+        background: var(--primary-4, #2b3ca1);
+        color: #fff;
+      }
+    }
+  }
+
+  .react-select__indicators {
+    cursor: pointer;
+
+    .react-select__indicator-separator {
+      opacity: 0;
+      pointer-events: none;
+    }
+  }
+  .error-message {
+    color: red;
+    font-size: 12px;
+  }
+}

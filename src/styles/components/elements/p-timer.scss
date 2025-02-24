@@ -1,0 +1,90 @@
+.p-timer-container {
+  display: flex;
+  align-items: center;
+  font-family: "Helvetica Neue", sans-serif;
+
+  .p-timer-text {
+    margin-right: 10px;
+    font-size: 1.2em;
+    color: #333;
+  }
+
+  .p-timer-values {
+    display: flex;
+    align-items: center;
+
+    .p-timer-value {
+      display: flex;
+      margin: 0 5px;
+      height: 40px;
+
+      .digit-roller {
+        width: 24px;
+        height: 40px;
+        overflow: hidden;
+        position: relative;
+        background: #f8f8f8;
+        border-radius: 4px;
+        margin: 0 1px;
+
+        .digit-roller-container {
+          position: absolute;
+          width: 100%;
+          transition: transform 0.3s ease-in-out;
+          display: flex;
+          flex-direction: column;
+
+          .digit {
+            width: 100%;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2em;
+            color: #000;
+            font-weight: 500;
+          }
+        }
+      }
+    }
+
+    .p-timer-separator {
+      font-size: 2em;
+      color: #000;
+      animation: blink 1s step-start 0s infinite;
+      margin: 0 2px;
+      font-weight: 500;
+    }
+  }
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+
+// Optional: Add these styles for a more polished look
+.digit-roller {
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 3px;
+    z-index: 1;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.1), transparent);
+  }
+
+  &::before {
+    top: 0;
+  }
+
+  &::after {
+    bottom: 0;
+    transform: rotate(180deg);
+  }
+}

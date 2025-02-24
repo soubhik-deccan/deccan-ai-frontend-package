@@ -1,0 +1,28 @@
+.p-checkbox-container {
+  display: flex;
+  align-items: center;
+  margin: 8px 0;
+
+  .MuiFormControlLabel-root {
+    margin: 0;
+
+    .MuiCheckbox-root {
+      padding: 4px;
+    }
+
+    .MuiTypography-root {
+      font-size: 0.875rem;
+      color: #333;
+    }
+  }
+
+  &.error {
+    .MuiFormControlLabel-label {
+      color: #d32f2f;
+    }
+
+    .MuiCheckbox-root {
+      color: #d32f2f;
+    }
+  }
+}

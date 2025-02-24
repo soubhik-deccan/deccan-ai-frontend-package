@@ -1,0 +1,67 @@
+.p-display-response {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  background-color: var(--neutrals-9);
+  border-radius: 8px;
+
+  &__header {
+    font-size: var(--h-md);
+    color: var(--primary-5);
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    width: 100%;
+
+    ul {
+      list-style-position: inside;
+      padding-inline-start: 16px;
+    }
+    ol {
+      list-style-position: inside;
+      padding-inline-start: 16px;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p,
+    div,
+    section,
+    article,
+    aside,
+    nav,
+    header,
+    footer,
+    main,
+    figure,
+    figcaption,
+    blockquote,
+    details,
+    dialog,
+    fieldset,
+    form,
+    hr,
+    ul,
+    ol,
+    pre {
+      margin-bottom: 10px;
+    }
+
+    li {
+      margin-bottom: 4px;
+      line-height: 140%;
+    }
+  }
+}
+
+.p-latex-container {
+  width: 100%;
+}

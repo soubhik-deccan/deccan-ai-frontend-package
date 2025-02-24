@@ -1,0 +1,36 @@
+.p-audio-renderer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  font-family: var(--fm-2);
+
+  &__fallback {
+    color: var(--neutrals-2);
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .rhap_container {
+    background-color: transparent;
+    box-shadow: none;
+    .rhap_progress-filled {
+      background-color: var(--primary-5);
+    }
+    .rhap_progress-indicator {
+      background-color: var(--primary-5);
+    }
+    .rhap_volume-indicator,
+    .rhap_volume-bar-filled {
+      background-color: var(--primary-5);
+    }
+    .rhap_main-controls-button,
+    .rhap_repeat-button,
+    .rhap_volume-button {
+      color: var(--primary-5);
+    }
+  }
+}

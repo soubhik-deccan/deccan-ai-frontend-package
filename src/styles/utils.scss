@@ -1,0 +1,58 @@
+// utils.scss
+
+/* Base Styles Mixin */
+@mixin base-styles(
+	$weight: 400,
+	$line-height: normal,
+	$color: var(--primary-color)
+) {
+	font-weight: $weight;
+	line-height: $line-height;
+	color: $color;
+}
+
+/* Responsive Font Size Mixin */
+@mixin responsive-font-size($sizes) {
+	@media (max-width: 1180px) {
+		font-size: nth($sizes, 1);
+	}
+	@media (max-width: 1180px) {
+		font-size: nth($sizes, 2);
+	}
+	@media (max-width: 1180px) {
+		font-size: nth($sizes, 3);
+	}
+	@media (max-width: 1024px) {
+		font-size: nth($sizes, 4);
+	}
+	@media (max-width: 768px) {
+		font-size: nth($sizes, 5);
+	}
+	@media (max-width: 500px) {
+		font-size: nth($sizes, 6);
+	}
+}
+
+// Flex Row
+@mixin flex-row($justify: flex-start, $align: center) {
+	display: flex;
+	flex-direction: row;
+	justify-content: $justify;
+	align-items: $align;
+}
+
+// Flex Column
+@mixin flex-col($justify: flex-start, $align: center) {
+	display: flex;
+	flex-direction: column;
+	justify-content: $justify;
+	align-items: $align;
+}
+
+// Grid
+@mixin grid($col: 1fr, $row: 1fr, $gap: 0) {
+	display: grid;
+	grid-template-columns: repeat($col, 1fr);
+	grid-template-rows: repeat($row, 1fr);
+	gap: $gap;
+}

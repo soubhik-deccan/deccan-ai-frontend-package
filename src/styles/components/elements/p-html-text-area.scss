@@ -1,0 +1,39 @@
+.p-html-text-area {
+  width: 100%;
+  height: auto;
+  min-height: 100px;
+  resize: vertical;
+  padding: 8px 20px;
+  border-radius: 8px;
+  border: 1px solid var(--neutrals-7, #ccc);
+  background: var(--neutrals-9, #fff);
+  box-shadow: none;
+  color: var(--neutrals-1, #1b1b1b);
+  font-size: 14px;
+
+  &:hover {
+    border: 1px solid var(--neutrals-6, #b3b3b3);
+  }
+
+  &:focus {
+    outline: none;
+    border: 1px solid var(--primary-4, #2b3ca1);
+  }
+
+  &::placeholder {
+    color: var(--neutrals-4, #999999);
+    font-size: 14px;
+  }
+
+  &.error {
+    border: 1px solid var(--accent-red, #c22929);
+    background-color: var(--accent-red-lite, #fbeeee);
+  }
+
+  &.disabled {
+    opacity: 0.5;
+    background-color: var(--neutrals-85, #f5f5f5);
+    color: var(--neutrals-1, #1b1b1b);
+    cursor: not-allowed;
+  }
+}

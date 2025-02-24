@@ -1,0 +1,34 @@
+.p-tabs {
+  &__tab-list {
+    display: flex;
+    border-bottom: 1px solid var(--neutrals-5);
+  }
+
+  &__tab-panel {
+    padding: 16px;
+  }
+}
+
+.p-tab {
+  padding: 12px 16px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  border-bottom: 2px solid transparent;
+  font-size: 16px;
+  transition: border-bottom-color 0.3s, color 0.3s;
+
+  &:hover {
+    background-color: var(--neutrals-85);
+  }
+
+  &--active {
+    border-bottom-color: var(--primary-5);
+    color: var(--primary-5);
+    font-weight: bold;
+  }
+}
+
+.p-tab-panel {
+  display: block;
+}

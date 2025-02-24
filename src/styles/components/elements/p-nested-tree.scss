@@ -1,0 +1,37 @@
+.p-nested-tree {
+  width: 100%;
+  min-height: 200px;
+  max-height: 600px;
+  overflow-y: auto;
+  background: var(--neutrals-9, #fff);
+  border: 1px solid var(--neutrals-7, #ccc);
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  font-family: "Inter", sans-serif;
+
+  .sortable-tree {
+    font-size: 14px;
+  }
+
+  .node-content-wrapper {
+    cursor: pointer;
+    &:hover,
+    &:focus {
+      background: var(--neutrals-8, #f0f0f0);
+    }
+  }
+
+  .node-content-wrapper.is-dragging-over {
+    background: var(--primary-2, #e0eaff);
+  }
+
+  .node-content-wrapper.is-search-match {
+    background: var(--accent-2, #fffbe6);
+  }
+
+  .node-content-wrapper.is-search-focus {
+    background: var(--primary-4, #2b3ca1);
+    color: var(--neutrals-9, #fff);
+  }
+}
