@@ -70,7 +70,9 @@
     "rollup": "rm -rf dist && rollup -c --bundleConfigAsCjs",
     "build": "yarn rollup && yarn release && git push --follow-tags",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "build-storybook": "storybook build",
+    "dev": "cd dev && vite",
+    "build:dev": "cd dev && vite build"
   },
   "devDependencies": {
     "@chromatic-com/storybook": "1.9.0",
