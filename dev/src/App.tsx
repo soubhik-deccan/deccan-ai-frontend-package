@@ -1,7 +1,7 @@
-import React from 'react';
+import { FC, useState } from 'react';
 
-function App() {
-  const [count, setCount] = React.useState(0);
+const App: FC = () => {
+  const [count, setCount] = useState<number>(0);
   
   return (
     <div style={{ padding: '2rem' }}>
@@ -16,6 +16,6 @@ function App() {
       </div>
     </div>
   );
-}
+};
 
 export default App;

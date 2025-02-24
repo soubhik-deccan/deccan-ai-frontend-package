@@ -18,7 +18,10 @@
     "paths": {
       "@components/*": ["../src/components/*"],
       "@styles/*": ["../src/styles/*"]
-    }
+    },
+    "types": ["react", "react-dom"],
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true
   },
   "include": ["src"],
   "references": [{ "path": "./tsconfig.node.json" }]
